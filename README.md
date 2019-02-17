@@ -1,2 +1,0 @@
-# CheesBurger
-Created with CodeSandbox

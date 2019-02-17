@@ -1,0 +1,52 @@
+.burger {
+  /*奶酪，肉，生菜 */
+
+  /* 尺寸 */
+  width: 380px;
+  height: 40px;
+  border-radius: 15px;
+
+  /* 颜色和形状 */
+  background-color: transparent;
+  box-shadow: /* 奶酪 */ 10px 50px #fbdb28, /* 肉 */ 10px 85px #681f24,
+    /* 生菜 */ 10px 120px #82af15;
+}
+
+.burger:before {
+  /* 面包 */
+  content: "                  ▼";
+  color: #fbdb28;
+  font-size: 50px;
+  /* 空格会显示在content中 */
+  white-space: pre;
+  /* 垂直放置 */
+  line-height: 37cm;
+  display: block;
+  width: 400px;
+  height: 55px;
+
+  /* 上层面包 */
+  border-top: 80px solid #f5b230;
+
+  /* 下层面包 */
+  border-bottom: 50px solid #f5b230;
+
+  /* 弯曲面包 */
+  border-radius: 30% 30% 20% 20%;
+}
+
+.burger:after {
+  /* 芝麻 */
+  content: "";
+  display: block;
+  /* 尺寸和形状 */
+  width: 10px;
+  height: 6px;
+  border-radius: 40%;
+  /* 位置和颜色 */
+  background-color: transparent;
+  box-shadow:       /* 顶行 */ 100px -165px #ffffff, 160px -165px #ffffff,
+    230px -165px #ffffff, 290px -165px #ffffff, /* 底行 */ 60px -135px #ffffff,
+    125px -135px #ffffff, 190px -135px #ffffff, 255px -135px #ffffff,
+    330px -135px #ffffff;
+}
